@@ -17,17 +17,22 @@ public class Main {
         // ClassName.staticVariableName(); e.g. Math.PI
 
         // abs
-
+        int num1 = -2;
+        
         // pow
-
+        
         // sqrt
-
+        
 
 
         //create a random number in the range [0,1)
-
-        //create a random number in the range [0, n)
-
+        double random = Math.random();
+        System.out.println(random);
+        
+        //create a random1 number in the range [0, 6)
+        double random2 = Math.random();
+        random2*= 6; //tryna change the range
+        System.out.println(random2);
         // create a random number in the range [0,n]
 
         // create a random number in the range [m,n]
