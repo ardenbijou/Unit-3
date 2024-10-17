@@ -16,6 +16,7 @@ public class Lesson1 {
 
         // is x greater than y? store result in boolean variable
 
+        boolean xGTy = x > y;
 
         //which two rectangles are the same?
         Rectangle rect1 = new Rectangle(1,3);
@@ -23,6 +24,7 @@ public class Lesson1 {
         Rectangle rect3 = new Rectangle(5,7);
 
         //does this work? why or why not? If not, fix it
+        //no, we need to use .equals() for objects
         boolean oneAndTwo = rect1 == rect2;
         boolean oneAndThree = rect1 == rect3;
         boolean twoAndThree = rect2 == rect3;

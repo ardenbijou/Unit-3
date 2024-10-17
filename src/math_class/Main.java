@@ -1,56 +1,72 @@
-package math_class;
-
-/**
- * https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Math.html
- */
-
+import java.math.MathContext;
 import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
+// ClassName.methodName(); e.g. Math.random()
+// ClassName.staticVariableName(); e.g. Math.PI
 
-        //using math class which is a static class
-        //static things (methods and variables) belong to the class rather than
-        //objects (instance of the class)
-        //we don't need to create an object since Math class is static
-        // ClassName.methodName(); e.g. Math.random()
-        // ClassName.staticVariableName(); e.g. Math.PI
+        double myPI = Math.PI;
 
-        // abs
+// abs
         int num1 = -2;
-        
-        // pow
-        
-        // sqrt
-        
+        int absValue = Math.abs(num1);
+        System.out.println(absValue);
 
+// pow
+        double num2 = Math.pow(3,5);
+        System.out.println(num2); //cast to int if you want that
+
+// sqrt
+        double num3 = Math.sqrt(80);
+        System.out.println(num3);
+        System.out.println(Math.pow(num3,2)); //round off error
 
         //create a random number in the range [0,1)
-        double random = Math.random();
-        System.out.println(random);
-        
-        //create a random1 number in the range [0, 6)
-        double random2 = Math.random();
-        random2*= 6; //tryna change the range
-        System.out.println(random2);
+        double random1 = Math.random();
+        System.out.println(random1);
+
+        //create a random integer in the range [0, n)
+        // example: [0,6)
+        double random2 = (int)(Math.random()*6);
+        // in general, multiply by n
+
+        //create a random number in the range [0,1)
+        // create a random  in the range [0,n]
+        // example [0,6]
+        double random3 = (int)(Math.random()*7);
+
+
+        //For Homework (you can make up m and n values)
+
+        // 1) create a random integer in the range [m,n]
+
+        // 2) create a random negative integer in the range [-m,0]
+
+        // 3) create a random negative integer in the range [-m,-n]
+
+        // 4) create a random negative integer in the range [-m,n]
+
+        //create a random number in the range [0, n)
+
         // create a random number in the range [0,n]
 
         // create a random number in the range [m,n]
 
 
+        // Save for Thursday
 
-        //using the Random Class
-        //This is not static so we have to create a Random object
+//using the Random Class
+//This is not static so we have to create a Random object
+Random rand = new Random();
 
-        //create a Random object
+int randInt = randObj.nextInt();
+System.out.println(randInt);
 
-        //get int with and without bound
+//with bound
+int randIntSmaller = randObj.nextInt(bound 100);
 
-        // get double
+// get double
+double  randDouble = randObj.nextDouble(); //between 0 and 1
 
-
-
-
-
-    }
-}
+double randDouble2 = randObj.nextDouble()*50+50; //between
